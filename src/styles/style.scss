@@ -1,9 +1,15 @@
+//fontes
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 
-
-//variaveis
+//variaveis cores
 $cor: #ff525d;
 $cor-bg1: #ff8f70;
 $cor-bg2: #ff3d54;
+$cor-button-hover:#ff7a85;
+
+//variaveis fontes
+$fonte1:'Overpass', sans-serif;
+$fonte2:'Ubuntu', sans-serif;
 
 *{
     margin: 0;
@@ -15,7 +21,104 @@ $cor-bg2: #ff3d54;
     url(../assets/bg-pattern-intro-desktop.svg),
     linear-gradient(to right, $cor-bg1, $cor-bg2);
     background-repeat: no-repeat, no-repeat;
-    height: 600px;
+    height: 25em;
     background-position:center;
     background-size: auto;
+    border-radius: 0px 0px 0px 50px;
+}
+p{
+    font-family: $fonte1;
+    font-weight: 300;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1em;
+}
+.logo{
+    margin-left: 7em;
+}
+nav{
+    color: #fff;
+    font-family: $fonte2;
+    margin-top: 1em;
+    margin-right: 31em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    border-radius: 3px;
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+nav .submenu li {
+    display: block;
+}
+
+nav .submenu li a {
+    padding: 10px;
+}
+.topform{
+    margin-right: 100px;
+    margin-top: 0.5em;
+    
+}
+@mixin forms{
+    background: none;
+    border: none;
+    padding: 12px;
+    font-family: $fonte2;
+    font-weight: 300;
+    color: #fff
+}
+@mixin hoverbutton{
+    background:$cor-button-hover;
+    border-radius: 2em;
+    
+}
+#sing{
+    @include forms;
+    margin-left: 1em;
+}
+#login{
+    @include forms;
+}
+#sing:hover{
+    @include hoverbutton;
+}
+#login:hover{
+    @include hoverbutton;
+}
+
+.top{
+
+}
+h1{
+    font-family: $fonte1 ;
 }

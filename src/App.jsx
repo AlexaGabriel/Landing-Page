@@ -1,5 +1,6 @@
 import editor from './assets/illustration-editor-desktop.svg'
 import celular from './assets/illustration-phones.svg'
+import logo from './assets/logo.svg'
 import "./styles/style.scss"
 
 function App() {
@@ -11,29 +12,46 @@ function App() {
      
         <div className='container'>
           <header>
-            <h1>Blogr</h1>
+            <img className="logo" src={logo} alt="logo Blogr" />
             <nav>
               <ul>
-                <li>Product
-                  <ul>
-                    <li>alex</li>
+                <li className='dropdown_1'>Product
+                  <ul className='submenu'>
+                    <li><a href="">Overview</a></li>       
+                    <li><a href="">Pricing</a></li>                
+                    <li><a href="">Marketplace</a></li>
+                    <li><a href="">Features</a></li>                 
+                    <li><a href="">Integrations</a></li>
                   </ul>
                 </li>
-                <li>Company</li>
-                <li>connect</li>
+                <li className='dropdown_2'>Company
+                  <ul className='submenu'>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Careers</a></li>
+                  </ul>
+                </li>
+                <li className='dropdown_3'>connect
+                <ul className='submenu'>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Newsletter</a></li>
+                  <li><a href="">LinkedIn</a></li>
+                </ul>
+                </li>
               </ul>
             </nav>
-            <form action="">
-              <input type="button" name="sing-up" id="sing" value="Sing Up"/>
+            <form className='topform' action="">
               <input type="button" name="login" id="login" value="Login" />
+              <input type="button" name="sing-up" id="sing" value="Sing Up"/>
             </form>
           </header>
               <article className='top'>
                 <h1>A modern publishing platform</h1>
                 <p>Grow your audience and build your online brand</p>
                 <form action="">
-                  <input type="button" name="sing-up" id="sing" value="Start for Free"/>
-                  <input type="button" name="sing-up" id="sing" value="Learn More"/>
+                  <input type="button" name="sing-up" id="start" value="Start for Free"/>
+                  <input type="button" name="sing-up" id="learn" value="Learn More"/>
                 </form>
               </article>
         </div>
@@ -52,12 +70,12 @@ function App() {
               by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
               </p>
               <figure>
-                <img src={editor} alt="" />
+                <img src={editor} alt="drawed page" />
               </figure>
             </article>
             <article>
               <figure>
-                  <img src={celular} alt="" />
+                  <img src={celular} alt="imagem de um celular" />
               </figure>
               <h2>State of the Art Infrastructure</h2>
               <p>
@@ -83,6 +101,7 @@ function App() {
           </section>
         </main>
         <footer>
+          <img src={logo} alt="logo blogr" />
         </footer>
      </body>
     </>
