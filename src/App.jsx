@@ -9,36 +9,37 @@ function App() {
     <>
      <body>
      
-        <header className='background'>
-          <h1>Blogr</h1>
-          <nav>
-            <ul>
-              <li>Product
-                <ul>
-                  <li>alex</li>
-                </ul>
-              </li>
-              <li>Company</li>
-              <li>connect</li>
-            </ul>
-          </nav>
-          <form action="">
-            <input type="button" name="sing-up" id="sing" value="Sing Up"/>
-            <input type="button" name="login" id="login" value="Login" />
-          </form>
-       
-        </header>
+        <div className='container'>
+          <header>
+            <h1>Blogr</h1>
+            <nav>
+              <ul>
+                <li>Product
+                  <ul>
+                    <li>alex</li>
+                  </ul>
+                </li>
+                <li>Company</li>
+                <li>connect</li>
+              </ul>
+            </nav>
+            <form action="">
+              <input type="button" name="sing-up" id="sing" value="Sing Up"/>
+              <input type="button" name="login" id="login" value="Login" />
+            </form>
+          </header>
+              <article className='top'>
+                <h1>A modern publishing platform</h1>
+                <p>Grow your audience and build your online brand</p>
+                <form action="">
+                  <input type="button" name="sing-up" id="sing" value="Start for Free"/>
+                  <input type="button" name="sing-up" id="sing" value="Learn More"/>
+                </form>
+              </article>
+        </div>
+
         <main>
-          <section>
-            <article className='background'>
-              <h1>A modern publishing platform</h1>
-              <p>Grow your audience and build your online brand</p>
-              <form action="">
-                <input type="button" name="sing-up" id="sing" value="Start for Free"/>
-                <input type="button" name="sing-up" id="sing" value="Learn More"/>
-              </form>
-            </article>
-                
+          <section>   
             <article>
               <h2>Designed for the future</h2>
               <h3> Introducing an extensible editor</h3>

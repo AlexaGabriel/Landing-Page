@@ -1,9 +1,21 @@
+
+
+//variaveis
+$cor: #ff525d;
+$cor-bg1: #ff8f70;
+$cor-bg2: #ff3d54;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.background{
-    background-image: url(../assets/bg-pattern-intro-desktop.svg);
-    
+.container{
+    background: 
+    url(../assets/bg-pattern-intro-desktop.svg),
+    linear-gradient(to right, $cor-bg1, $cor-bg2);
+    background-repeat: no-repeat, no-repeat;
+    height: 600px;
+    background-position:center;
+    background-size: auto;
 }
