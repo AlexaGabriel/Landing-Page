@@ -23,7 +23,7 @@ $fonte2:'Ubuntu', sans-serif;
     background-repeat: no-repeat, no-repeat;
     height: 25em;
     background-position:center;
-    background-size: auto;
+    
     border-radius: 0px 0px 0px 50px;
 }
 p{
@@ -84,7 +84,7 @@ nav .submenu li {
 nav .submenu li a {
     padding: 10px;
 }
-.topform{
+.headform{
     margin-right: 100px;
     margin-top: 0.5em;
     
@@ -117,8 +117,30 @@ nav .submenu li a {
 }
 
 .top{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 }
 h1{
     font-family: $fonte1 ;
+    font-weight: 600;
+    color: #fff;
+    font-size:3em;
+    margin-bottom: 0.5em;
+}
+.p-top{
+    color: #fff;
+    margin-bottom: 2em;
+}
+.topform{
+    margin-bottom: 3em;
+}
+#start{
+    margin-right: 1em;
+    @include forms;
+}
+#learn{
+    @include forms;
 }

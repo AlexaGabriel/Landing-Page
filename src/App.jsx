@@ -41,15 +41,15 @@ function App() {
                 </li>
               </ul>
             </nav>
-            <form className='topform' action="">
+            <form className='headform' action="">
               <input type="button" name="login" id="login" value="Login" />
               <input type="button" name="sing-up" id="sing" value="Sing Up"/>
             </form>
           </header>
               <article className='top'>
                 <h1>A modern publishing platform</h1>
-                <p>Grow your audience and build your online brand</p>
-                <form action="">
+                <p className='p-top'>Grow your audience and build your online brand</p>
+                <form className='topform' action="">
                   <input type="button" name="sing-up" id="start" value="Start for Free"/>
                   <input type="button" name="sing-up" id="learn" value="Learn More"/>
                 </form>
