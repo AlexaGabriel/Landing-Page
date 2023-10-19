@@ -58,7 +58,7 @@ function App() {
 
         <main>
           <section>   
-            <article>
+            <article className='editor'>
               <h2>Designed for the future</h2>
               <h3> Introducing an extensible editor</h3>
               <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
@@ -70,12 +70,12 @@ function App() {
               by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
               </p>
               <figure>
-                <img src={editor} alt="drawed page" />
+                <img src={editor} width= "250px" height="250px" alt="drawed page" />
               </figure>
             </article>
             <article>
               <figure>
-                  <img src={celular} alt="imagem de um celular" />
+                  <img src={celular} width= "250px" height="250px" alt="imagem de um celular" />
               </figure>
               <h2>State of the Art Infrastructure</h2>
               <p>

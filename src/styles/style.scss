@@ -103,14 +103,23 @@ nav .submenu li a {
     
 }
 #sing{
-    @include forms;
+    cursor: pointer;
+    background-color: #fff;
+    border:none;
+    border-radius: 1.5em;
+    padding: 11px 18px 11px 18px;
+    font-family: $fonte2;
+    font-weight: bold;
+    color: $cor-bg2;
     margin-left: 1em;
 }
 #login{
+    cursor: pointer;
     @include forms;
 }
 #sing:hover{
     @include hoverbutton;
+    color: #fff;
 }
 #login:hover{
     @include hoverbutton;
@@ -138,9 +147,45 @@ h1{
     margin-bottom: 3em;
 }
 #start{
+    cursor: pointer;
     margin-right: 1em;
-    @include forms;
+    background-color: #fff;
+    border:none;
+    border-radius: 1.5em;
+    padding: 11px 18px 11px 18px;
+    font-family: $fonte2;
+    font-weight: bold;
+    color: $cor-bg2;
+    margin-left: 1em;
+}
+#start:hover{
+    @include hoverbutton;
+    color: #fff;
 }
 #learn{
-    @include forms;
+    cursor: pointer;
+    background:none;
+    border-color: #fff;
+    border-style:solid;
+    border-radius: 1.5em;
+    padding: 11px 18px 11px 18px;
+    font-family: $fonte2;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 1em;
+}
+#learn:hover{
+    background-color: #fff;
+    color: $cor-bg2;
+    
+}
+//main
+
+.editor{
+    display: grid;
+    grid-template-columns: 100px 250px 300px;
+    grid-template-rows: 100px 50px 250px;
+}
+.editor h2{
+    
 }
