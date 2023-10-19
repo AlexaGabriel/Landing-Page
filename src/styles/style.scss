@@ -183,9 +183,26 @@ h1{
 
 .editor{
     display: grid;
-    grid-template-columns: 250px 300px;
-    grid-template-rows: 100px 50px 250px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 50px 200px 200px;
+    justify-content: space-around;
+    align-items: stretch;
+    justify-items: center;
 }
 .editor h2{
-    
+    grid-row: 1 ;
+    grid-column: 1;
 }
+.editor .linha1{
+    grid-row: 2;
+    grid-column: 1;
+}
+.editor .linha2{
+    grid-row: 3;
+    grid-column: 1;
+}
+.page{
+    grid-row: 2;
+    grid-column: 2;
+}
+
