@@ -1,6 +1,7 @@
 import editor from './assets/illustration-editor-desktop.svg'
 import celular from './assets/illustration-phones.svg'
 import logo from './assets/logo.svg'
+import pc from './assets/illustration-laptop-desktop.svg'
 import "./styles/style.scss"
 
 function App() {
@@ -89,23 +90,47 @@ function App() {
             </article>
             <article>
               <figure>
+                <img src={pc} className="pc" width= "700px" height="600px" alt="notebook" />
               </figure>
-              <h3> Free, open, simple</h3>
-              <p>
-              Blogr is a free and open source application backed by a large community of helpful developers. It supports
-              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-              </p>
-              <h3>Powerful tooling</h3>
-              <p>
-              Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-              capable of producing even the most complicated sites.
-              </p>
+              <div className='container3'>
+                <h3 className='h1'> Free, open, simple</h3>
+                <p className='p1'>
+                Blogr is a free and open source application backed by a large community of helpful developers. It supports
+                features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+                and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                </p>
+                <h3 className='h2'>Powerful tooling</h3>
+                <p className='p2'>
+                Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+                </p>
+              </div>
             </article>
           </section>
         </main>
         <footer>
           <img src={logo} alt="logo blogr" />
+            <h3>Product</h3>
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+            <h3>Connect</h3>
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
         </footer>
     </>
   )
