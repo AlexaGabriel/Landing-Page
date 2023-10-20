@@ -5,6 +5,8 @@
 $cor: #ff525d;
 $cor-bg1: #ff8f70;
 $cor-bg2: #ff3d54;
+$cor-bg3:#2c2d3f;
+$cor-bg4: #3f4164;
 $cor-button-hover:#ff7a85;
 
 //variaveis fontes
@@ -195,7 +197,7 @@ h1{
     align-items: start;
     justify-items: start;
 }
- h2{
+ .title2{
     margin-top: 4em;
     font-weight: 600;
     font-size: 2em;
@@ -220,8 +222,36 @@ h1{
     grid-row: 4;
     grid-column: 1;
 }
-.page{
+.container2{
+    display: flex;
+    justify-content: space-around;
+    background:
+    url(../assets/bg-pattern-circles.svg),
+    linear-gradient(to right, $cor-bg3, $cor-bg4);
+    background-repeat: no-repeat, no-repeat;
+    background-position:left;
+    border-radius:0px 100px 0px 100px ;
+    height: 350px;
+}
+.text{
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-rows: 0px 150px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+.text h2{
+    grid-row: 1;
+    color: #fff;
+    font-family: $fonte1;
+}
+.text p{
+    grid-row: 2;
+    color: #fff;
     
 }
-
-
+.celular{
+   padding: 30px;
+}

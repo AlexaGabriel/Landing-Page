@@ -8,8 +8,7 @@ function App() {
   //Html
   return(
     <>
-     <body>
-     
+     {/* parte superior da pagina */}
         <div className='container'>
           <header>
             <img className="logo" src={logo} alt="logo Blogr" />
@@ -55,10 +54,10 @@ function App() {
                 </form>
               </article>
         </div>
-
+        {/* parte central da pagina */}
         <main>
           <section>   
-            <h2>Designed for the future</h2>
+            <h2 className='title2'>Designed for the future</h2>
             <div className='flex1'>
               <article className='editor'>
                 <h3 className='linha1'> Introducing an extensible editor</h3>
@@ -71,20 +70,22 @@ function App() {
                 by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
                 </p>
               </article>
-              <figure>
+              <figure className='pagemain'>
                   <img src={editor} width= "600px" height="600px" alt="drawed page" className='page' />
               </figure>
             </div>
 
-            <article>
+            <article className='container2'>
               <figure>
-                  <img src={celular} width= "250px" height="250px" alt="imagem de um celular" />
+                  <img src={celular} className='celular' width= "450px" height="450px" alt="imagem de um celular" />
               </figure>
-              <h2>State of the Art Infrastructure</h2>
-              <p>
-              With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-              </p>
+              <div className='text'>
+                <h2>State of the Art Infrastructure</h2>
+                <p>
+                With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+                This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+              </div>
             </article>
             <article>
               <figure>
@@ -106,7 +107,6 @@ function App() {
         <footer>
           <img src={logo} alt="logo blogr" />
         </footer>
-     </body>
     </>
   )
 }
