@@ -255,11 +255,18 @@ h1{
 .celular{
    padding: 30px;
 }
+.flex2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .container3{
     display: grid;
     grid-template-columns: 350px;
     grid-template-rows: 20px 200px 20px 200px;
-    justify-items: center;
+    justify-items: start;
 }
 .container3 .h1{
     grid-row: 1;
@@ -275,4 +282,49 @@ h1{
 }
 .container3 .p2{
     grid-row: 4;
+}
+
+.liss{
+    background-color: #25252d;
+    display: grid;
+    color: #fff;
+    height: 300px;
+    justify-content: space-evenly;
+    justify-items: start;
+    grid-template-rows: 100%;
+    grid-template-columns: 100px 100px 100px 100px;
+    align-items: start;
+}
+.logof{
+    margin-top: 3em;
+    grid-column: 1;
+    grid-row: 1;
+}
+@mixin uls{
+    list-style-type: none;
+    margin-top: 3em;
+}
+.ula{
+    grid-column: 2;
+    grid-row: 1;
+    @include uls
+}
+.ulb{
+    grid-column: 3;
+    grid-row: 1;
+    @include uls
+}
+.ulc{
+    grid-column: 4;
+    grid-row: 1;
+    @include uls
+}
+.ula li, .ula h3{
+    padding: 0.5em;
+}
+.ulb li, .ulb h3{
+    padding: 0.5em;
+}
+.ulc li, .ulc h3{
+    padding: 0.5em;
 }

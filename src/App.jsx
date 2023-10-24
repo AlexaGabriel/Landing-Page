@@ -75,7 +75,6 @@ function App() {
                   <img src={editor} width= "600px" height="600px" alt="drawed page" className='page' />
               </figure>
             </div>
-
             <article className='container2'>
               <figure>
                   <img src={celular} className='celular' width= "450px" height="450px" alt="imagem de um celular" />
@@ -88,9 +87,9 @@ function App() {
                 </p>
               </div>
             </article>
-            <article>
+            <article className='flex2'>
               <figure>
-                <img src={pc} className="pc" width= "700px" height="600px" alt="notebook" />
+                <img src={pc} className="pc" width= "600px" height="500px" alt="notebook" />
               </figure>
               <div className='container3'>
                 <h3 className='h1'> Free, open, simple</h3>
@@ -109,28 +108,32 @@ function App() {
           </section>
         </main>
         <footer>
-          <img src={logo} alt="logo blogr" />
-            <h3>Product</h3>
-            <ul>
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul>
-            <h3>Company</h3>
-            <ul>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-            </ul>
-            <h3>Connect</h3>
-            <ul>
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
-            </ul>
+          <div className='liss'>
+              <img src={logo}  className='logof' width="100px" height="35px" alt="logo blogr" />
+              <ul className='ula'>
+                <h3>Product</h3>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+              
+              <ul className='ulb'>
+                <h3>Company</h3>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+              
+              <ul className='ulc'>
+                <h3>Connect</h3>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+          </div>
         </footer>
     </>
   )
