@@ -57,7 +57,8 @@ function App() {
         </div>
         {/* parte central da pagina */}
         <main>
-          <section>   
+          <section>
+            <div className='editortodo'> 
             <h2 className='title2'>Designed for the future</h2>
             <div className='flex1'>
               <article className='editor'>
@@ -72,9 +73,10 @@ function App() {
                 </p>
               </article>
               <figure className='pagemain'>
-                  <img src={editor} width= "600px" height="600px" alt="drawed page" className='page' />
+                  {/*<img src={editor} width= "600px" height="600px" alt="drawed page" className='page' />*/}
               </figure>
             </div>
+            </div>  
             <article className='container2'>
               <figure>
                   <img src={celular} className='celular' width= "450px" height="450px" alt="imagem de um celular" />
