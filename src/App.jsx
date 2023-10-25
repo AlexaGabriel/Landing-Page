@@ -73,15 +73,14 @@ function App() {
                 </p>
               </article>
               <figure className='pagemain'>
-                  {/*<img src={editor} width= "600px" height="600px" alt="drawed page" className='page' />*/}
+                  
               </figure>
             </div>
             </div>  
             <article className='container2'>
-              <figure>
-                  <img src={celular} className='celular' width= "450px" height="450px" alt="imagem de um celular" />
-              </figure>
+               
               <div className='text'>
+              <img src={celular} className='celular' width= "450px" height="450px" alt="imagem de um celular" />
                 <h2>State of the Art Infrastructure</h2>
                 <p>
                 With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
@@ -91,7 +90,7 @@ function App() {
             </article>
             <article className='flex2'>
               <figure>
-                <img src={pc} className="pc" width= "600px" height="500px" alt="notebook" />
+                
               </figure>
               <div className='container3'>
                 <h3 className='h1'> Free, open, simple</h3>
