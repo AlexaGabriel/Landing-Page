@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    h1{
+     font-size: 2em;
+     font-weight: 300;
+    }
+    .burguer{
+        display: block;
+    }
+    .nav-tot{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vh;
+        height: 100vh;
+        background: #fff ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav li{
+        margin-right: none;
+        
+        color: black;
+    }
+}

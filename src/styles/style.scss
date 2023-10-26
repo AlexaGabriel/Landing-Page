@@ -40,7 +40,12 @@ header {
     align-items: flex-start;
     padding: 1em;
 }
-
+.burguer{
+    display: none;
+  }
+.nav-tot{
+    display: flex;
+}
 .logo {
     margin-left: 7em;
 }
@@ -89,6 +94,7 @@ nav .submenu li {
 nav .submenu li a {
     padding: 0.625em;
 }
+
 
 .headform {
     margin-right: 6.25em;
@@ -409,3 +415,6 @@ h1 {
 .ula li, .ulb li, .ulc li{
     color: #c8c8cb;
 }
+
+//responsividade
+@import "stylecel";

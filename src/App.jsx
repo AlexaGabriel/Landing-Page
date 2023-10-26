@@ -1,7 +1,6 @@
-import editor from './assets/illustration-editor-desktop.svg'
 import celular from './assets/illustration-phones.svg'
 import logo from './assets/logo.svg'
-import pc from './assets/illustration-laptop-desktop.svg'
+import burguer from './assets/icon-hamburger.svg'
 import "./styles/style.scss"
 
 function App() {
@@ -13,38 +12,42 @@ function App() {
         <div className='container'>
           <header>
             <img className="logo" src={logo} alt="logo Blogr" />
-            <nav>
-              <ul>
-                <li className='dropdown_1'>Product
+            <img className="burguer" src={burguer} alt="" />
+            <div className='nav-tot'>
+              <nav>
+                <ul>
+                  <li className='dropdown_1'>Product
+                    <ul className='submenu'>
+                      <li><a href="">Overview</a></li>
+                      <li><a href="">Pricing</a></li>
+                      <li><a href="">Marketplace</a></li>
+                      <li><a href="">Features</a></li>
+                      <li><a href="">Integrations</a></li>
+                    </ul>
+                  </li>
+                  <li className='dropdown_2'>Company
+                    <ul className='submenu'>
+                      <li><a href="">About</a></li>
+                      <li><a href="">Team</a></li>
+                      <li><a href="">Blog</a></li>
+                      <li><a href="">Careers</a></li>
+                    </ul>
+                  </li>
+                  <li className='dropdown_3'>connect
                   <ul className='submenu'>
-                    <li><a href="">Overview</a></li>       
-                    <li><a href="">Pricing</a></li>                
-                    <li><a href="">Marketplace</a></li>
-                    <li><a href="">Features</a></li>                 
-                    <li><a href="">Integrations</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">LinkedIn</a></li>
                   </ul>
-                </li>
-                <li className='dropdown_2'>Company
-                  <ul className='submenu'>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Careers</a></li>
-                  </ul>
-                </li>
-                <li className='dropdown_3'>connect
-                <ul className='submenu'>
-                  <li><a href="">Contact</a></li>
-                  <li><a href="">Newsletter</a></li>
-                  <li><a href="">LinkedIn</a></li>
+                  </li>
                 </ul>
-                </li>
-              </ul>
-            </nav>
-            <form className='headform' action="">
-              <input type="button" name="login" id="login" value="Login" />
-              <input type="button" name="sing-up" id="sing" value="Sing Up"/>
-            </form>
+              </nav>
+              <form className='headform' action="">
+                <input type="button" name="login" id="login" value="Login" />
+                <input type="button" name="sing-up" id="sing" value="Sing Up"/>
+              </form>
+              
+            </div>
           </header>
               <article className='top'>
                 <h1>A modern publishing platform</h1>
