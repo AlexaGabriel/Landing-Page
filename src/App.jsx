@@ -13,6 +13,7 @@ function App() {
       this.handleClick = this.handleClick.bind(this)
     }
     handleClick(){
+      console.log(this)
       this.navlist.classList.toggle(this.activeClass)
     }
     addClickEvent(){
