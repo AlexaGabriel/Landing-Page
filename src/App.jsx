@@ -1,38 +1,15 @@
 import celular from './assets/illustration-phones.svg'
 import logo from './assets/logo.svg'
 import burguer from './assets/icon-hamburger.svg'
+import { useState } from 'react'
 import "./styles/style.scss"
 
 function App() {
-  class MobileNavbar{
-    constructor(mobileMenu, navList, navLinks){
-      this.mobileMenu = document.querySelector(mobileMenu)
-      this.navlist = document.querySelector(navList)
-      this.navlinks = document.querySelectorAll(navLinks)
-      this.activeClass = "active"
-      this.handleClick = this.handleClick.bind(this)
-    }
-    handleClick(){
-      console.log(this)
-      this.navlist.classList.toggle(this.activeClass)
-    }
-    addClickEvent(){
-      this.mobileMenu.addEventListener("click", this.handleClick)
-    }
-    init(){
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
-      return this
-    }
-  }
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-Menu",
-    ".nav-List",
-    "nav li",
-    
-  )
-  mobileNavbar.init()
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
 
   //Html
     return(
@@ -41,9 +18,9 @@ function App() {
         <div className='container'>
         <header>
           <img className="logo" src={logo} alt="logo Blogr" />
-          <img className="mobile-Menu" src={burguer} alt="" />
-          <div className="nav-List">
-            <nav>
+          <img className="mobile-Menu"  onClick={toggleMenu} src={burguer} alt="" />
+          <div className={`nav-List  ${isMenuOpen ? 'open' : ''}`}>
+            <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
               <ul>
                 <li className='dropdown_1'>Product
                   <ul className='submenu'>
